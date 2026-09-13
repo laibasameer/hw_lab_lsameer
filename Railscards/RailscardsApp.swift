@@ -1,6 +1,6 @@
 //
-//  RailscardsApp.swift
-//  Railscards
+//  RailsCardsApp.swift
+//  RailsCards
 //
 //  Created by Apple on 13/09/2026.
 //
@@ -8,10 +8,10 @@
 import SwiftUI
 
 @main
-struct RailscardsApp: App {
+struct RailsCardsApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CardView()
         }
     }
 }

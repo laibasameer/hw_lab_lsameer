@@ -6,14 +6,30 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXContainerItemProxy section */
+		1823E6493056FFA3004A63D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1823E6193056E5D8004A63D3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1823E6203056E5D8004A63D3;
+			remoteInfo = Railscards;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		1823E6213056E5D8004A63D3 /* Railscards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Railscards.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1823E6213056E5D8004A63D3 /* RailsCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RailsCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1823E6453056FFA3004A63D3 /* RailsCardsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RailsCardsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		1823E6233056E5D8004A63D3 /* Railscards */ = {
+		1823E6233056E5D8004A63D3 /* RailsCards */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Railscards;
+			path = RailsCards;
+			sourceTree = "<group>";
+		};
+		1823E6463056FFA3004A63D3 /* RailsCardsTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = RailsCardsTests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -26,13 +42,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1823E6423056FFA3004A63D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		1823E6183056E5D8004A63D3 = {
 			isa = PBXGroup;
 			children = (
-				1823E6233056E5D8004A63D3 /* Railscards */,
+				1823E6233056E5D8004A63D3 /* RailsCards */,
+				1823E6463056FFA3004A63D3 /* RailsCardsTests */,
 				1823E6223056E5D8004A63D3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -40,7 +64,8 @@
 		1823E6223056E5D8004A63D3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1823E6213056E5D8004A63D3 /* Railscards.app */,
+				1823E6213056E5D8004A63D3 /* RailsCards.app */,
+				1823E6453056FFA3004A63D3 /* RailsCardsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,9 +73,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1823E6203056E5D8004A63D3 /* Railscards */ = {
+		1823E6203056E5D8004A63D3 /* RailsCards */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1823E62C3056E5DB004A63D3 /* Build configuration list for PBXNativeTarget "Railscards" */;
+			buildConfigurationList = 1823E62C3056E5DB004A63D3 /* Build configuration list for PBXNativeTarget "RailsCards" */;
 			buildPhases = (
 				1823E61D3056E5D8004A63D3 /* Sources */,
 				1823E61E3056E5D8004A63D3 /* Frameworks */,
@@ -61,14 +86,37 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				1823E6233056E5D8004A63D3 /* Railscards */,
+				1823E6233056E5D8004A63D3 /* RailsCards */,
 			);
-			name = Railscards;
+			name = RailsCards;
 			packageProductDependencies = (
 			);
 			productName = Railscards;
-			productReference = 1823E6213056E5D8004A63D3 /* Railscards.app */;
+			productReference = 1823E6213056E5D8004A63D3 /* RailsCards.app */;
 			productType = "com.apple.product-type.application";
+		};
+		1823E6443056FFA3004A63D3 /* RailsCardsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1823E64B3056FFA3004A63D3 /* Build configuration list for PBXNativeTarget "RailsCardsTests" */;
+			buildPhases = (
+				1823E6413056FFA3004A63D3 /* Sources */,
+				1823E6423056FFA3004A63D3 /* Frameworks */,
+				1823E6433056FFA3004A63D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1823E64A3056FFA3004A63D3 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				1823E6463056FFA3004A63D3 /* RailsCardsTests */,
+			);
+			name = RailsCardsTests;
+			packageProductDependencies = (
+			);
+			productName = RailscardsTests;
+			productReference = 1823E6453056FFA3004A63D3 /* RailsCardsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -83,9 +131,13 @@
 					1823E6203056E5D8004A63D3 = {
 						CreatedOnToolsVersion = 26.5;
 					};
+					1823E6443056FFA3004A63D3 = {
+						CreatedOnToolsVersion = 26.5;
+						TestTargetID = 1823E6203056E5D8004A63D3;
+					};
 				};
 			};
-			buildConfigurationList = 1823E61C3056E5D8004A63D3 /* Build configuration list for PBXProject "Railscards" */;
+			buildConfigurationList = 1823E61C3056E5D8004A63D3 /* Build configuration list for PBXProject "RailsCards" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -99,13 +151,21 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1823E6203056E5D8004A63D3 /* Railscards */,
+				1823E6203056E5D8004A63D3 /* RailsCards */,
+				1823E6443056FFA3004A63D3 /* RailsCardsTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		1823E61F3056E5D8004A63D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1823E6433056FFA3004A63D3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +182,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1823E6413056FFA3004A63D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1823E64A3056FFA3004A63D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1823E6203056E5D8004A63D3 /* RailsCards */;
+			targetProxy = 1823E6493056FFA3004A63D3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		1823E62A3056E5DB004A63D3 /* Debug */ = {
@@ -306,10 +381,50 @@
 			};
 			name = Release;
 		};
+		1823E64C3056FFA3004A63D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = laiba.RailscardsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RailsCards.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RailsCards";
+			};
+			name = Debug;
+		};
+		1823E64D3056FFA3004A63D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = laiba.RailscardsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RailsCards.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RailsCards";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1823E61C3056E5D8004A63D3 /* Build configuration list for PBXProject "Railscards" */ = {
+		1823E61C3056E5D8004A63D3 /* Build configuration list for PBXProject "RailsCards" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1823E62A3056E5DB004A63D3 /* Debug */,
@@ -318,11 +433,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1823E62C3056E5DB004A63D3 /* Build configuration list for PBXNativeTarget "Railscards" */ = {
+		1823E62C3056E5DB004A63D3 /* Build configuration list for PBXNativeTarget "RailsCards" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1823E62D3056E5DB004A63D3 /* Debug */,
 				1823E62E3056E5DB004A63D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1823E64B3056FFA3004A63D3 /* Build configuration list for PBXNativeTarget "RailsCardsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1823E64C3056FFA3004A63D3 /* Debug */,
+				1823E64D3056FFA3004A63D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
