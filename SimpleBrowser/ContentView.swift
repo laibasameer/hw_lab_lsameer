@@ -8,14 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject private var viewModel = ViewModel()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        VStack(spacing: 0) {
+            SearchBar(viewModel: viewModel)
+            Divider()
+            WebView(viewModel: viewModel)
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+            Divider()
+            BottomBar(viewModel: viewModel)
         }
-        .padding()
+        .sheet(isPresented: $viewModel.shouldShowShareSheet) {
+            ShareSheet(activityItems: [viewModel.urlString])
+        }
     }
 }
 
