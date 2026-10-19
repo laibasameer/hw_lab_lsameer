@@ -28,6 +28,9 @@ final class SimpleContactsUITests: XCTestCase {
         let app = XCUIApplication()
         app.launch()
 
+        let navigationBar = app.navigationBars["My Contacts"]
+        XCTAssertTrue(navigationBar.waitForExistence(timeout: 3), "The main navigation bar should exist after app launch.")
+        
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         // XCUIAutomation Documentation
         // https://developer.apple.com/documentation/xcuiautomation
@@ -41,3 +44,4 @@ final class SimpleContactsUITests: XCTestCase {
         }
     }
 }
+
